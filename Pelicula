@@ -1,0 +1,96 @@
+package clases;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+@Entity
+public class Pelicula{
+@ManyToMany
+@Id
+// le deberiamos poner un id numeral?
+private String titulo;
+private String genero;
+private String paisOrigen;
+private String productora;
+private int anioEdicion;
+private String resenia;
+private List <Actores> actores ;
+
+public Pelicula(String titulo, String genero, String paisOrigen, String productora, int anioEdicion, String resenia) {
+	super();
+	this.titulo = titulo;
+	this.genero = genero;
+	this.paisOrigen = paisOrigen;
+	this.productora = productora;
+	this.anioEdicion = anioEdicion;
+	this.resenia = resenia;
+}
+
+public String getTitulo() {
+	return titulo;
+}
+
+public void setTitulo(String titulo) {
+	this.titulo = titulo;
+}
+
+public String getGenero() {
+	return genero;
+}
+
+public void setGenero(String genero) {
+	this.genero = genero;
+}
+
+public String getPaisOrigen() {
+	return paisOrigen;
+}
+
+public void setPaisOrigen(String paisOrigen) {
+	this.paisOrigen = paisOrigen;
+}
+
+public String getProductora() {
+	return productora;
+}
+
+public void setProductora(String productora) {
+	this.productora = productora;
+}
+
+public int getAnioEdicion() {
+	return anioEdicion;
+}
+
+public void setAnioEdicion(int anioEdicion) {
+	this.anioEdicion = anioEdicion;
+}
+
+public String getResenia() {
+	return resenia;
+}
+
+public void setResenia(String resenia) {
+	this.resenia = resenia;
+}
+
+public List<Actores> getActores() {
+	return actores;
+}
+
+public void setActores(List<Actores> actores) {
+	this.actores = actores;
+}
+
+
+
+
+
+	
+
+
+
+}
