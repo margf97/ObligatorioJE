@@ -19,6 +19,8 @@ private int anioEdicion;
 private String resenia;
 private List <Actores> actores ;
 
+//hay que inicializar en 0 asi no da error al ingresar una nueva pelicula sin actores
+
 public Pelicula(String titulo, String genero, String paisOrigen, String productora, int anioEdicion, String resenia) {
 	super();
 	this.titulo = titulo;
